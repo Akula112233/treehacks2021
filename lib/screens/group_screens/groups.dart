@@ -8,13 +8,11 @@ class GroupScreen extends StatelessWidget {
   static String id = "group_screen";
   @override
   Widget build(BuildContext context) {
-    List<Group> groups;
+    List<Group> groups = new List<Group>();
     return CupertinoScrollbar(
       child: ListView.builder(
         itemCount: groups.length,
-        itemBuilder: (BuildContext context, int index) => {
-          return ClickableGrayBox(title: groups[index].title, line1: groups[index].tags.toString(), line2: groups[index].description, onPressed: Navigator.pushNamed(context, GroupScoreboard.id), buttonText: "More");
-        },
+        itemBuilder: (BuildContext context, int index) => ClickableGrayBox(title: groups[index].title, line1: groups[index].tags.toString(), line2: groups[index].description, route: GroupScoreboard.id, buttonText: "More"),
       ),
     );
   }

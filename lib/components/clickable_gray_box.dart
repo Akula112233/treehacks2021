@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'standard_button.dart';
+import 'package:treehacks2021/main.dart';
 
 class ClickableGrayBox extends StatelessWidget{
-  ClickableGrayBox({@required this.title, @required this.line1, @required this.onPressed, @required this.buttonText, this.line2 = "", this.challengesDropdown});
+  ClickableGrayBox({@required this.title, @required this.line1, @required this.route, @required this.buttonText, this.line2 = "", this.challengesDropdown});
   final String title;
   final String line1;
   final String buttonText;
   final String line2;
-  final Function onPressed;
+  final String route;
   final Function challengesDropdown;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPressed,
+      onTap: () => NavigationUtil.navigate(context, route),
       child: Container(
           margin: EdgeInsets.only(top: 8.0, bottom: 12.0),
           padding: EdgeInsets.only(left: 20, right: 5, top: 15, bottom: 15),
@@ -47,7 +48,7 @@ class ClickableGrayBox extends StatelessWidget{
                         Container(
                             child: StandardButton(
                               buttonText,
-                              onPressed,
+                              (context, route) => NavigationUtil.navigate(context, route),
                               textSize: 13,
                             )),
                       ]))

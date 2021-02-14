@@ -2,9 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:treehacks2021/components/standard_button.dart';
+import 'package:treehacks2021/main.dart';
 import 'package:treehacks2021/screens/challenges_screens/challenges_screen.dart';
 import 'package:treehacks2021/screens/profile_screen.dart';
 import 'package:treehacks2021/screens/group_screens/groups.dart';
+import 'package:treehacks2021/workout_screens/camera_screen.dart';
 
 User loggedInUser;
 
@@ -94,6 +97,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
               title: Center(child: Text('')),
               backgroundColor: Colors.lightBlueAccent,
+            ),
+            body: Column(
+              children: [
+                Spacer(),
+                StandardButton("Start Exercise", () => NavigationUtil.navigate(context, CameraScreen.id)),
+                Spacer()
+              ],
             ),
           ),
           GroupScreen(),

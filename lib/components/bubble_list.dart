@@ -5,7 +5,7 @@ import 'package:gradient_text/gradient_text.dart';
 
 class BubbleList extends StatelessWidget{
   BubbleList({@required this.nameScoreMap});
-  Map<String, int> nameScoreMap;
+  final Map<String, int> nameScoreMap;
 
   @override
   Widget build(BuildContext context) {

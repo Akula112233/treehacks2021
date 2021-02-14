@@ -68,7 +68,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 Hero(
                   tag: 'logo',
                   child: Container(
-                    child: Image.asset('images/logo.png'),
+                    child: Container(),
                     height: animation.value * 100,
                   ),
                 ),
