@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "904813335367",
+    "project_id": "treehacks2021-f7aad",
+    "storage_bucket": "treehacks2021-f7aad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904813335367:android:302ef33ea641afab11f262",
+        "android_client_info": {
+          "package_name": "com.example.treehacks2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904813335367-igq0rvi6brnl1kls92sm9gjhjftlheua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH_q-N5gj0DkxFJw99prJeWyIyILNqsLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904813335367-igq0rvi6brnl1kls92sm9gjhjftlheua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
