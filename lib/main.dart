@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
+import 'package:treehacks2021/screens/group_screens/groups.dart';
+import 'package:treehacks2021/screens/profile_screen.dart';
 import 'package:treehacks2021/screens/welcome_screen.dart';
 import 'package:treehacks2021/screens/login_screen.dart';
 import 'package:treehacks2021/screens/registration_screen.dart';
@@ -26,6 +28,8 @@ class MyApp extends StatelessWidget {
         LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
         HomeScreen.id: (context) => HomeScreen(),
+        ProfileScreen.id: (context) => ProfileScreen(),
+        GroupScreen.id: (context) => GroupScreen(),
       },
     );
   }
