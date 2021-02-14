@@ -23,7 +23,17 @@ environment:
 dependencies:
   firebase_auth: ^0.20.0+1
   firebase_core: ^0.7.0
+  firebase_analytics: ^7.0.1
+  firebase_storage: ^7.0.0
+  cloud_firestore: ^0.16.0
   flutter_svg: ^0.18.0
+  curved_navigation_bar: ^0.3.7
+  gradient_text: ^1.0.2
+  path_provider: ^1.6.27
+  video_player: ^1.0.1
+  wakelock: ^0.2.1+1
+  camera: ^0.7.0+2
+  path: ^1.7.0
   flutter:
     sdk: flutter
 
